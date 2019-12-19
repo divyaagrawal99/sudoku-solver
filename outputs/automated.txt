@@ -1,0 +1,726 @@
+
+=================================== 
+METHOD:AC3
+FILE:almost_filled
+ 
+Solved In: 0.002462 seconds
+=================================== 
+METHOD:AC3
+FILE:almost_filled
+ 
+Solved In: 0.002459 seconds
+=================================== 
+METHOD:AC3
+FILE:almost_filled
+ 
+Solved In: 0.002975 seconds
+=================================== 
+METHOD:AC3
+FILE:almost_filled
+ 
+Solved In: 0.003047 seconds
+=================================== 
+METHOD:AC3
+FILE:almost_filled
+ 
+Solved In: 0.003025 seconds
+=================================== 
+METHOD:AC3
+FILE:blank
+ 
+Solved In: 0.006467 seconds
+=================================== 
+METHOD:AC3
+FILE:blank
+ 
+Solved In: 0.007067 seconds
+=================================== 
+METHOD:AC3
+FILE:blank
+ 
+Solved In: 0.006275 seconds
+=================================== 
+METHOD:AC3
+FILE:blank
+ 
+Solved In: 0.006637 seconds
+=================================== 
+METHOD:AC3
+FILE:blank
+ 
+Solved In: 0.006046 seconds
+=================================== 
+METHOD:AC3
+FILE:hard
+ 
+Solved In: 0.015169 seconds
+=================================== 
+METHOD:AC3
+FILE:hard
+ 
+Solved In: 0.014653 seconds
+=================================== 
+METHOD:AC3
+FILE:hard
+ 
+Solved In: 0.015874 seconds
+=================================== 
+METHOD:AC3
+FILE:hard
+ 
+Solved In: 0.014696 seconds
+=================================== 
+METHOD:AC3
+FILE:hard
+ 
+Solved In: 0.01477 seconds
+=================================== 
+METHOD:AC3
+FILE:impossible
+ 
+Solved In: NOT SOLVED seconds
+=================================== 
+METHOD:AC3
+FILE:impossible
+ 
+Solved In: NOT SOLVED seconds
+=================================== 
+METHOD:AC3
+FILE:impossible
+ 
+Solved In: NOT SOLVED seconds
+=================================== 
+METHOD:AC3
+FILE:impossible
+ 
+Solved In: NOT SOLVED seconds
+=================================== 
+METHOD:AC3
+FILE:impossible
+ 
+Solved In: NOT SOLVED seconds
+=================================== 
+METHOD:AC3
+FILE:input_unsolvable
+ 
+Solved In: NOT SOLVED seconds
+=================================== 
+METHOD:AC3
+FILE:input_unsolvable
+ 
+Solved In: NOT SOLVED seconds
+=================================== 
+METHOD:AC3
+FILE:input_unsolvable
+ 
+Solved In: NOT SOLVED seconds
+=================================== 
+METHOD:AC3
+FILE:input_unsolvable
+ 
+Solved In: NOT SOLVED seconds
+=================================== 
+METHOD:AC3
+FILE:input_unsolvable
+ 
+Solved In: NOT SOLVED seconds
+=================================== 
+METHOD:AC3
+FILE:input1
+ 
+Solved In: 0.016654 seconds
+=================================== 
+METHOD:AC3
+FILE:input1
+ 
+Solved In: 0.017416 seconds
+=================================== 
+METHOD:AC3
+FILE:input1
+ 
+Solved In: 0.019182 seconds
+=================================== 
+METHOD:AC3
+FILE:input1
+ 
+Solved In: 0.019826 seconds
+=================================== 
+METHOD:AC3
+FILE:input1
+ 
+Solved In: 0.020312 seconds
+=================================== 
+METHOD:AC3
+FILE:input2
+ 
+Solved In: 0.017833 seconds
+=================================== 
+METHOD:AC3
+FILE:input2
+ 
+Solved In: 0.016732 seconds
+=================================== 
+METHOD:AC3
+FILE:input2
+ 
+Solved In: 0.01717 seconds
+=================================== 
+METHOD:AC3
+FILE:input2
+ 
+Solved In: 0.016605 seconds
+=================================== 
+METHOD:AC3
+FILE:input2
+ 
+Solved In: 0.017236 seconds
+=================================== 
+METHOD:AC3
+FILE:input3
+ 
+Solved In: 0.020712 seconds
+=================================== 
+METHOD:AC3
+FILE:input3
+ 
+Solved In: 0.020313 seconds
+=================================== 
+METHOD:AC3
+FILE:input3
+ 
+Solved In: 0.020863 seconds
+=================================== 
+METHOD:AC3
+FILE:input3
+ 
+Solved In: 0.02142 seconds
+=================================== 
+METHOD:AC3
+FILE:input3
+ 
+Solved In: 0.021169 seconds
+=================================== 
+METHOD:AC3
+FILE:multiple_solution
+ 
+Solved In: 0.020676 seconds
+=================================== 
+METHOD:AC3
+FILE:multiple_solution
+ 
+Solved In: 0.019742 seconds
+=================================== 
+METHOD:AC3
+FILE:multiple_solution
+ 
+Solved In: 0.021818 seconds
+=================================== 
+METHOD:AC3
+FILE:multiple_solution
+ 
+Solved In: 0.021554 seconds
+=================================== 
+METHOD:AC3
+FILE:multiple_solution
+ 
+Solved In: 0.020465 seconds
+=================================== 
+METHOD:CSP
+FILE:almost_filled
+ 
+Solved In: 0.010174 seconds
+=================================== 
+METHOD:CSP
+FILE:almost_filled
+ 
+Solved In: 0.010279 seconds
+=================================== 
+METHOD:CSP
+FILE:almost_filled
+ 
+Solved In: 0.010209 seconds
+=================================== 
+METHOD:CSP
+FILE:almost_filled
+ 
+Solved In: 0.010261 seconds
+=================================== 
+METHOD:CSP
+FILE:almost_filled
+ 
+Solved In: 0.009503 seconds
+=================================== 
+METHOD:CSP
+FILE:blank
+ 
+Solved In: 0.010496 seconds
+=================================== 
+METHOD:CSP
+FILE:blank
+ 
+Solved In: 0.010266 seconds
+=================================== 
+METHOD:CSP
+FILE:blank
+ 
+Solved In: 0.010378 seconds
+=================================== 
+METHOD:CSP
+FILE:blank
+ 
+Solved In: 0.010011 seconds
+=================================== 
+METHOD:CSP
+FILE:blank
+ 
+Solved In: 0.010187 seconds
+=================================== 
+METHOD:CSP
+FILE:hard
+ 
+Solved In: 0.007283 seconds
+=================================== 
+METHOD:CSP
+FILE:hard
+ 
+Solved In: 0.007087 seconds
+=================================== 
+METHOD:CSP
+FILE:hard
+ 
+Solved In: 0.008009 seconds
+=================================== 
+METHOD:CSP
+FILE:hard
+ 
+Solved In: 0.007431 seconds
+=================================== 
+METHOD:CSP
+FILE:hard
+ 
+Solved In: 0.007751 seconds
+=================================== 
+METHOD:CSP
+FILE:impossible
+ 
+Solved In: 0.00051 seconds
+=================================== 
+METHOD:CSP
+FILE:impossible
+ 
+Solved In: 0.000263 seconds
+=================================== 
+METHOD:CSP
+FILE:impossible
+ 
+Solved In: 0.000267 seconds
+=================================== 
+METHOD:CSP
+FILE:impossible
+ 
+Solved In: 0.00026 seconds
+=================================== 
+METHOD:CSP
+FILE:impossible
+ 
+Solved In: 0.00028 seconds
+=================================== 
+METHOD:CSP
+FILE:input_unsolvable
+ 
+Solved In: 0.007795 seconds
+=================================== 
+METHOD:CSP
+FILE:input_unsolvable
+ 
+Solved In: 0.007232 seconds
+=================================== 
+METHOD:CSP
+FILE:input_unsolvable
+ 
+Solved In: 0.008444 seconds
+=================================== 
+METHOD:CSP
+FILE:input_unsolvable
+ 
+Solved In: 0.007367 seconds
+=================================== 
+METHOD:CSP
+FILE:input_unsolvable
+ 
+Solved In: 0.008195 seconds
+=================================== 
+METHOD:CSP
+FILE:input1
+ 
+Solved In: 0.010194 seconds
+=================================== 
+METHOD:CSP
+FILE:input1
+ 
+Solved In: 0.009766 seconds
+=================================== 
+METHOD:CSP
+FILE:input1
+ 
+Solved In: 0.010642 seconds
+=================================== 
+METHOD:CSP
+FILE:input1
+ 
+Solved In: 0.009937 seconds
+=================================== 
+METHOD:CSP
+FILE:input1
+ 
+Solved In: 0.009601 seconds
+=================================== 
+METHOD:CSP
+FILE:input2
+ 
+Solved In: 0.011372 seconds
+=================================== 
+METHOD:CSP
+FILE:input2
+ 
+Solved In: 0.010317 seconds
+=================================== 
+METHOD:CSP
+FILE:input2
+ 
+Solved In: 0.010369 seconds
+=================================== 
+METHOD:CSP
+FILE:input2
+ 
+Solved In: 0.009642 seconds
+=================================== 
+METHOD:CSP
+FILE:input2
+ 
+Solved In: 0.010169 seconds
+=================================== 
+METHOD:CSP
+FILE:input3
+ 
+Solved In: 0.01014 seconds
+=================================== 
+METHOD:CSP
+FILE:input3
+ 
+Solved In: 0.009659 seconds
+=================================== 
+METHOD:CSP
+FILE:input3
+ 
+Solved In: 0.009664 seconds
+=================================== 
+METHOD:CSP
+FILE:input3
+ 
+Solved In: 0.009834 seconds
+=================================== 
+METHOD:CSP
+FILE:input3
+ 
+Solved In: 0.009696 seconds
+=================================== 
+METHOD:CSP
+FILE:multiple_solution
+ 
+Solved In: 0.004827 seconds
+=================================== 
+METHOD:CSP
+FILE:multiple_solution
+ 
+Solved In: 0.004715 seconds
+=================================== 
+METHOD:CSP
+FILE:multiple_solution
+ 
+Solved In: 0.006024 seconds
+=================================== 
+METHOD:CSP
+FILE:multiple_solution
+ 
+Solved In: 0.004638 seconds
+=================================== 
+METHOD:CSP
+FILE:multiple_solution
+ 
+Solved In: 0.00465 seconds
+=================================== 
+METHOD:BF
+FILE:almost_filled
+ 
+Solved In: 0.000208 seconds
+=================================== 
+METHOD:BF
+FILE:almost_filled
+ 
+Solved In: 0.000116 seconds
+=================================== 
+METHOD:BF
+FILE:almost_filled
+ 
+Solved In: 0.000112 seconds
+=================================== 
+METHOD:BF
+FILE:almost_filled
+ 
+Solved In: 0.000113 seconds
+=================================== 
+METHOD:BF
+FILE:almost_filled
+ 
+Solved In: 0.000118 seconds
+=================================== 
+METHOD:BF
+FILE:blank
+ 
+Solved In: 0.011224 seconds
+=================================== 
+METHOD:BF
+FILE:blank
+ 
+Solved In: 0.012196 seconds
+=================================== 
+METHOD:BF
+FILE:blank
+ 
+Solved In: 0.011848 seconds
+=================================== 
+METHOD:BF
+FILE:blank
+ 
+Solved In: 0.012149 seconds
+=================================== 
+METHOD:BF
+FILE:blank
+ 
+Solved In: 0.011474 seconds
+=================================== 
+METHOD:BF
+FILE:hard
+ 
+Solved In: 0.036543 seconds
+=================================== 
+METHOD:BF
+FILE:hard
+ 
+Solved In: 0.03576 seconds
+=================================== 
+METHOD:BF
+FILE:hard
+ 
+Solved In: 0.036316 seconds
+=================================== 
+METHOD:BF
+FILE:hard
+ 
+Solved In: 0.035793 seconds
+=================================== 
+METHOD:BF
+FILE:hard
+ 
+Solved In: 0.035909 seconds
+=================================== 
+METHOD:BF
+FILE:impossible
+ 
+Solved In: NOT SOLVED seconds
+=================================== 
+METHOD:BF
+FILE:impossible
+ 
+Solved In: NOT SOLVED seconds
+=================================== 
+METHOD:BF
+FILE:impossible
+ 
+Solved In: NOT SOLVED seconds
+=================================== 
+METHOD:BF
+FILE:impossible
+ 
+Solved In: NOT SOLVED seconds
+=================================== 
+METHOD:BF
+FILE:impossible
+ 
+Solved In: NOT SOLVED seconds
+=================================== 
+METHOD:BF
+FILE:input_unsolvable
+ 
+Solved In: NOT SOLVED seconds
+=================================== 
+METHOD:BF
+FILE:input_unsolvable
+ 
+Solved In: NOT SOLVED seconds
+=================================== 
+METHOD:BF
+FILE:input_unsolvable
+ 
+Solved In: NOT SOLVED seconds
+=================================== 
+METHOD:BF
+FILE:input_unsolvable
+ 
+Solved In: NOT SOLVED seconds
+=================================== 
+METHOD:BF
+FILE:input_unsolvable
+ 
+Solved In: NOT SOLVED seconds
+=================================== 
+METHOD:BF
+FILE:input1
+ 
+Solved In: 0.001231 seconds
+=================================== 
+METHOD:BF
+FILE:input1
+ 
+Solved In: 0.001214 seconds
+=================================== 
+METHOD:BF
+FILE:input1
+ 
+Solved In: 0.001228 seconds
+=================================== 
+METHOD:BF
+FILE:input1
+ 
+Solved In: 0.001213 seconds
+=================================== 
+METHOD:BF
+FILE:input1
+ 
+Solved In: 0.001363 seconds
+=================================== 
+METHOD:BF
+FILE:input2
+ 
+Solved In: 0.001972 seconds
+=================================== 
+METHOD:BF
+FILE:input2
+ 
+Solved In: 0.001945 seconds
+=================================== 
+METHOD:BF
+FILE:input2
+ 
+Solved In: 0.002151 seconds
+=================================== 
+METHOD:BF
+FILE:input2
+ 
+Solved In: 0.001984 seconds
+=================================== 
+METHOD:BF
+FILE:input2
+ 
+Solved In: 0.001946 seconds
+=================================== 
+METHOD:BF
+FILE:input3
+ 
+Solved In: 0.394376 seconds
+=================================== 
+METHOD:BF
+FILE:input3
+ 
+Solved In: 0.393263 seconds
+=================================== 
+METHOD:BF
+FILE:input3
+ 
+Solved In: 0.40222 seconds
+=================================== 
+METHOD:BF
+FILE:input3
+ 
+Solved In: 0.420919 seconds
+=================================== 
+METHOD:BF
+FILE:input3
+ 
+Solved In: 0.428119 seconds
+=================================== 
+METHOD:BF
+FILE:multiple_solution
+ 
+Solved In: 1.254011 seconds
+=================================== 
+METHOD:BF
+FILE:multiple_solution
+ 
+Solved In: 1.290798 seconds
+=================================== 
+METHOD:BF
+FILE:multiple_solution
+ 
+Solved In: 1.278346 seconds
+=================================== 
+METHOD:BF
+FILE:multiple_solution
+ 
+Solved In: 1.231485 seconds
+=================================== 
+METHOD:BF
+FILE:multiple_solution
+ 
+Solved In: 1.267322 seconds
+=================================== 
+METHOD:ST
+FILE:almost_filled
+ 
+Solved In: 0.004507 seconds
+=================================== 
+METHOD:ST
+FILE:almost_filled
+ 
+Solved In: 0.005603 seconds
+=================================== 
+METHOD:ST
+FILE:almost_filled
+ 
+Solved In: 0.004254 seconds
+=================================== 
+METHOD:ST
+FILE:almost_filled
+ 
+Solved In: 0.004501 seconds
+=================================== 
+METHOD:ST
+FILE:almost_filled
+ 
+Solved In: 0.004826 seconds
+=================================== 
+METHOD:ST
+FILE:blank
+ 
+Solved In: 1.918501 seconds
+=================================== 
+METHOD:ST
+FILE:blank
+ 
+Solved In: 1.742055 seconds
+=================================== 
+METHOD:ST
+FILE:blank
+ 
+Solved In: 2.054111 seconds
+=================================== 
+METHOD:ST
+FILE:blank
+ 
+Solved In: 1.928328 seconds
+=================================== 
+METHOD:ST
+FILE:blank
+ 
+Solved In: 1.565744 seconds
