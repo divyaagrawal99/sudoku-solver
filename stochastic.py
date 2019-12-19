@@ -4,25 +4,22 @@ from math import sqrt
 from functools import reduce
 from datetime import datetime
 
-num_branches = 9
-beam_width = 10
-
-def conflict_count(board): #number of conflicts used as the heuristic
+def conflict_count(puzzle): #number of conflicts used as the heuristic
     rowconflicts = 0
     colconflicts = 0
     blockconflicts = 0
     for row in range(9):
         for col in range(9):
-            cell = board[row][col]
+            cell = puzzle[row][col]
           
             for otherrow in range(9):
               if otherrow != row:
-                if board[otherrow][col] == cell:
+                if puzzle[otherrow][col] == cell:
                   rowconflicts += 1
             
             for othercol in range(9):
               if othercol != col:
-                if board[row][othercol] == cell:
+                if puzzle[row][othercol] == cell:
                   colconflicts += 1
 
             vert_block_index = row // 3
@@ -37,7 +34,7 @@ def conflict_count(board): #number of conflicts used as the heuristic
             for r in range(row_start, row_end+1):
                 for c in range(col_start, col_end+1):
                       if row != r and col != c:
-                        if board[r][c] == cell:
+                        if puzzle[r][c] == cell:
                           blockconflicts += 1
     totalconflicts = rowconflicts + colconflicts + blockconflicts
     return totalconflicts
@@ -53,48 +50,62 @@ def duplicate_board(board):
     return copy
 
 
+def initial_possibilities(size, input_puzzle):
+    possibilities = [list(filter(lambda y: y not in x, range(1, size+1)))
+        for x in input_puzzle
+    ]
+    return possibilities
 
-def generate_successor(board, given):
+def random_index(possibilities, row_index):
+  return randint(0, len(possibilities[row_index])-1)
+
+def make_swaps(board, swaps, row_index):
+  next_board = duplicate_board(board)
+  next_board[row_index][swaps[1]], next_board[row_index][swaps[0]] = next_board[row_index][swaps[0]], next_board[row_index][swaps[1]]
+  return next_board
+
+def new_board(board, given):
     size = 9
-    choices = list(
+    possibilities = list(
         map(lambda x: list(filter(lambda y: (x[0], y) not in given, x[1])),
         enumerate([list(range(size)) for x in range(size)])))
 
-    row = randint(0,size-1)
-    if len(choices[row]) == 0:
+    row_index = randint(0,size-1)
+    if len(possibilities[row_index]) == 0:
       raise Exception
     else: 
-      index1 = randint(0, len(choices[row])-1)
-      choice1 = choices[row][index1]
-      del choices[row][index1]
-      index2 = randint(0, len(choices[row])-1)
-      choice2 = choices[row][index2]
-      del choices[row][index2]
-      ret = duplicate_board(board)
-      ret[row][choice2], ret[row][choice1] = ret[row][choice1], ret[row][choice2]
-      return ret
+      swaps = []
+      for i in range(2):
+        randind = random_index(possibilities, row_index)
+        swaps.append(possibilities[row_index][randind])
+
+        del possibilities[row_index][randind]
+
+      next_board = make_swaps(board, swaps, row_index)
+      return next_board
 
 
-def generate_board(given_board, given_nums):
-    size = 9
-    board = duplicate_board(given_board)
-    choices = [list(filter(lambda y: y not in x, range(1, size+1)))
-        for x in given_board
-    ]
+def initial_board(input_puzzle, constraints):
+    num_cols = 9
+    num_rows = 9
+    board = duplicate_board(input_puzzle)
+   
+    possibilities = initial_possibilities(num_cols, input_puzzle)
+      
 
-    for i in range(size):
-        for j in range(size):
-            if (i,j) not in given_nums:
-                index = randint(0, len(choices[i])-1)
-                board[i][j] = choices[i][index]
-                del choices[i][index]
+    for row in range(num_rows):
+        for col in range(num_cols):
+            if (row,col) not in constraints:
+                placement = randint(0, len(possibilities[row])-1)
+                board[row][col] = possibilities[row][placement]
+                del possibilities[row][placement]
     return board
 
-def initial_set(puzzle, given_nums, beam_width):
+def initialize_set(puzzle, given_nums, count):
   boards = []
   i = 0
-  while i < beam_width:
-      board = generate_board(puzzle, given_nums)
+  while i < count:
+      board = initial_board(puzzle, given_nums)
       boards.append((board, conflict_count(board)))
       i = i+1
   return boards
@@ -106,70 +117,77 @@ def output_format(matrix):
         result.append(num)
   return result
 
+def given_val_list(input_puzzle, num_rows, num_cols):
+    given_nums = [[]]
+    for i in range(num_rows):
+        for j in range(num_cols):
+            if input_puzzle[i][j] != 0:
+                given_nums.append((i, j))
+    return given_nums
+
+def is_solution(num_conflicts):
+  if num_conflicts == 0:
+    return True
+  else:
+    return False
 
 
 def solver(puzzle):
-    size = 9
-    given_nums = [[]]
-    for i in range(size):
-        for j in range(size):
-            if puzzle[i][j] != 0:
-                given_nums.append((i, j))
-    solved = False
+    num_successors = 9
+    beam_width = 10
+    num_rows = 9
+    num_cols = 9
+    constraints = given_val_list(puzzle, num_rows, num_cols)
+
     solution = []
   
     start = datetime.now()
-    boards = initial_set(puzzle, given_nums, beam_width=beam_width)
 
+    boards = initialize_set(puzzle, constraints, num_successors)
+    
     numrestarts = 0
-    while not solved:
+    numlevels = 0
+    while len(solution) == 0:
+        numlevels += 1
         randnum = randint(0, 10)
         if numrestarts > 10:
-         return ("Not solved", -1)
+          print("here")
+          return ("Not solved", -1)
 
         if (datetime.now() - start).total_seconds() > 2 and randnum > 8:
           start = datetime.now()
           numrestarts += 1
-          boards = initial_set(puzzle, given_nums, beam_width=beam_width)
+          boards = initialize_set(puzzle, constraints, num_successors)
 
-
-
-        # order by heuristic value of boards
+        #sort the number of conflicts
         boards.sort(key=lambda board: board[1])
 
-        # take top 10 (lower heuristic values)
-        boards = boards[:beam_width]
-        # check first board
-        # print(boards[0][1])
-        if boards[0][1] == 0:
-            # if heuristic is 0, set solved to true and set as solution
-            solved = True
+        local_optimum = boards[0][1]
+        if is_solution(local_optimum):
             solution = boards[0][0]
         else:
-            # else, generate successors and loop
-            ## generate successor boards
-            newboards = []
-            for board in boards:
-                # board_successors = []
-                try:
-                  for i in range(num_branches):
-                      successor = generate_successor(board[0], given_nums)
-                      newboards.append((successor, conflict_count(successor)))
-                except:
-                  return ("Not solved!", -1)
-                    
+            optimal_boards = boards[:beam_width]
 
-                # board_successors.sort(key = lambda succ: succ[1])
-
+            all_successors = []
+            for board in optimal_boards:
+                board_successors = []
+                for i in range(num_successors):
+                    successor = new_board(board[0], constraints)
+                    board_successors.append((successor, conflict_count(successor)))
                 
-                # newboards.append(board_successors[:6])
-                # randbranch = randint(3, num_branches-1)
-                # newboards.append(board_successors[randbranch])
+                board_successors.sort(key = lambda succ: succ[1])
+                best_successor = board_successors[0]
+                
 
-            # add each successor to current list with heuristic value
-            for board in newboards:
-                # print(board[1])
+                chance_best = randint(1, 10)
+                if chance_best > 2:
+                  all_successors.append(best_successor)
+                else:
+                  random_succ = randint(0, len(board_successors)-1)
+                  all_successors.append(board_successors[random_succ])
+                    
+            for board in all_successors:
                 boards.append(board)
-
+    endtime = (datetime.now() - start).total_seconds()
     solution = output_format(solution)
-    return (solution, (datetime.now() - start).total_seconds())
+    return (solution, endtime)

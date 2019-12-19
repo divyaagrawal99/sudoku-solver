@@ -22,3 +22,15 @@ Solved In: NOT SOLVED seconds
 
  
 Solved In: 2.765741 seconds
+=================================== 
+N o t   s o l v e
+d !
+
+ 
+Solved In: -1 seconds
+=================================== 
+N o t   s o l v e
+d
+
+ 
+Solved In: -1 seconds
